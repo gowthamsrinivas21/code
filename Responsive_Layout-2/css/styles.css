@@ -1,0 +1,230 @@
+/* ================================= 
+   Base Element Styles
+   ================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.125em; /*- 18px on most screens -*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: normal 100%/1.5 "Merriweather", serif;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font: 700 1.4rem/1.1 "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%; /*- Respnsive Images -*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ================================= 
+   Base Layout Styles
+   ================================= */
+
+/* ---- Layout Containers ---- */
+
+.main-header .container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.container,
+.profile {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-header .profile,
+.portfolio,
+.contact {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+.main-footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-top: 1px solid #e3e2e8;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---- Page Elements ---- */
+
+.main-nav li {
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 15px;
+  box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.8);
+}
+
+.main-nav a:hover {
+  background-color: #ededed;
+  box-shadow: none;
+}
+
+.profile img {
+  width: 250px;
+}
+
+.portfolio {
+  background-color: #fff;
+}
+
+.hide-on-Mobile {
+  display: none;
+}
+
+/* ================================= 
+   Media Queries
+   ================================= */
+@media screen and (min-width: 768px) {
+
+  .row,
+  .main-nav ul,
+  .profile,
+  .hide-on-Mobile ul  {
+    display: flex;
+  }
+
+  .main-header .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin-left: 12px;
+    margin-bottom: 0;
+  }
+
+  .main-nav li:first-child {
+    margin-left: 0;
+  }
+
+  .profile {
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+
+  .profile p {
+    text-align: left;
+    font-size: 1.2rem;
+    flex: 1.5;
+  }
+
+  .item {
+    flex: 1;
+  }
+
+  .intro {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .portfolio .row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .portfolio .col {
+    flex: 1 48%;
+  }
+
+  .portfolio {
+    padding-bottom: 0;
+  }
+
+  .contact {
+    width: 80%;
+    margin: auto;
+  }
+
+  .hide-on-Mobile {
+    display: block;
+  }
+
+  .hide-on-Mobile li {
+    margin-left: 12px;
+  }
+
+  .hide-on-MdandLg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-header .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container,
+  .profile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container,
+  .profile,
+  .main-footer {
+    width: 90%;
+    margin: auto;
+  }
+
+  .portfolio .col {
+    flex: 1 30%;
+  }
+
+  .contact {
+    width: 60%;
+    margin: auto;
+  }
+}
