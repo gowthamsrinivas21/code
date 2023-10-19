@@ -1,81 +1,113 @@
-/* ================================= 
-   Base Element Styles
-   ================================= */
+/* ===============================================  */
+/*                  Base Styles                     */
+/* ===============================================  */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: 1.125em; /*- 18px on most screens -*/
+  font-size: 1.25em; /* --- 20px on most screens --- */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font: normal 100%/1.5 "Merriweather", serif;
   background-color: #fafafa;
+  color: #4a4a4a;
   text-align: center;
+  font: 400 100%/1.5 "Nunito", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font: 700 1.4rem/1.1 "Montserrat", sans-serif;
+  font: 500 1.7rem/1.1 "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 1rem;
-  margin-bottom: 2.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 0.95rem;
-  font-weight: 300;
-  line-height: 1.6;
+  font-size: 1.3rem;
 }
 
 a {
-  color: #000;
+  color: #4a4a4a;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 img {
-  width: 100%; /*- Respnsive Images -*/
+  width: 100%; /* --- Responsive Images --- */
+  border-radius: 0.2rem;
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-/* ================================= 
-   Base Layout Styles
-   ================================= */
-
-/* ---- Layout Containers ---- */
-
-.main-header .container {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
+/* ===============================================  */
+/*                  Main Styles                     */
+/* ===============================================  */
 
 .container,
-.profile {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.profile,
+.contact,
+.main-footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.main-header .profile,
-.portfolio,
+.main-header {
+  padding-top: 0.5rem;
+}
+
+.name {
+  margin: 0;
+}
+
+.main-nav li {
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  background-color: #fed36e;
+}
+
+.profile,
 .contact {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.profile_img {
+  width: 250px;
+}
+
+.portfolio {
+  background-color: #fff;
+  padding: 2.5rem 0;
+}
+
+.portfolio h2 {
+  margin-bottom: 2.5rem;
 }
 
 article {
@@ -83,148 +115,121 @@ article {
 }
 
 .main-footer {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-top: 1px solid #e3e2e8;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-/* ---- Page Elements ---- */
-
-.main-nav li {
-  background-color: #fff;
-  margin-bottom: 1rem;
+.main-footer,
+.main-footer a {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
-.main-nav a {
-  display: block;
-  padding: 10px 15px;
-  box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.8);
-}
-
-.main-nav a:hover {
-  background-color: #ededed;
-  box-shadow: none;
-}
-
-.profile img {
-  width: 250px;
-}
-
-.portfolio {
-  background-color: #fff;
-}
-
-.hide-on-Mobile {
+.hide_on_mobile {
   display: none;
 }
 
-/* ================================= 
-   Media Queries
-   ================================= */
-@media screen and (min-width: 768px) {
+/* ===============================================  */
+/*                  Media Queries                   */
+/* ===============================================  */
 
-  .row,
+@media screen and (min-width: 768px) {
+  
+  .container,
   .main-nav ul,
   .profile,
-  .hide-on-Mobile ul  {
+  .hide_on_mobile ul {
     display: flex;
   }
 
-  .main-header .row {
+  .main-header .container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .main-nav li {
-    margin-left: 12px;
+    margin-right: 0.6rem;
     margin-bottom: 0;
+    background: none;
   }
 
-  .main-nav li:first-child {
-    margin-left: 0;
+  .main-nav a:hover {
+    background: none;
+  }
+
+  .main-nav li:last-child {
+    margin-right: 0;
   }
 
   .profile {
     flex-direction: row-reverse;
-    gap: 30px;
+    gap: 20px;
   }
 
-  .profile p {
-    text-align: left;
-    font-size: 1.2rem;
-    flex: 1.5;
-  }
-
-  .item {
+  .profile_img,
+  .intro {
     flex: 1;
   }
 
   .intro {
+    text-align: left;
+    font-size: 1.1rem;
     margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .portfolio .row {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .portfolio .col {
-    flex: 1 48%;
   }
 
   .portfolio {
     padding-bottom: 0;
   }
 
-  .contact {
-    width: 80%;
+  .row {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .col {
+    flex: 1 48%;
+  }
+
+  .contact p {
+    width: 70%;
     margin: auto;
+    margin-bottom: 0.8rem;
   }
 
-  .hide-on-Mobile {
-    display: block;
-  }
-
-  .hide-on-Mobile li {
-    margin-left: 12px;
-  }
-
-  .hide-on-MdandLg {
+  .hide_on_mgandlg {
     display: none;
+  }
+
+  .hide_on_mobile {
+    display: block;
+    align-self: center;
+  }
+
+  .hide_on_mobile li {
+    margin-left: 0.7rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .main-header .row {
+  .main-header .container {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .container,
-  .profile {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .container,
   .profile,
+  .contact,
   .main-footer {
     width: 90%;
+    max-width: 1150px;
     margin: auto;
   }
 
-  .portfolio .col {
+  .col {
     flex: 1 30%;
-  }
-
-  .contact {
-    width: 60%;
-    margin: auto;
   }
 }
