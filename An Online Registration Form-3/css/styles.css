@@ -1,0 +1,261 @@
+/* Base Styles ------------------------------ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.125em; /* 18px on most screens --- */
+}
+
+body {
+  font: 300 100%/1.5 "Merriweather", serif;
+  color: #2d3945;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 0.95rem;
+}
+
+h1,
+h2 {
+  line-height: 1.1;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+/* Main Styles ------------------------------ */
+
+.main-header {
+  background-color: #2d3945;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: -1rem -1rem 1rem;
+}
+
+.intro_text {
+  margin: 2rem 0;
+}
+
+.intro_text h2 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  width: 92%;
+  margin: 10px auto;
+}
+
+hr.border {
+  border: none;
+  height: 3px;
+}
+
+hr.top-border {
+  border-top: 5px solid;
+  border-bottom: 3px solid;
+}
+
+hr.bottom-border {
+  border-top: 3px solid;
+}
+
+.main-header,
+.intro_text,
+.main-footer {
+  text-align: center;
+}
+
+/* Form Styles ------------------------------ */
+
+form {
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background-color: #e8eeef;
+  color: #8a97a0;
+  border: none;
+  font-size: 0.9rem;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 1.2rem;
+  border-radius: 2px;
+  border: 2px solid #e8eeef;
+
+  transition-property: border;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  /* transition-delay: 1s; */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid;
+}
+
+#zip {
+  width: 50%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 15px 0;
+  font-size: 0.8rem;
+}
+
+/* select {
+  height: 32px;
+  padding: 6px;
+} */
+
+.btn {
+  background-color: #4bc970;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  padding: 19px 39px 18px 39px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend h2 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+#javascript,
+#plain_text {
+  margin-bottom: 2rem;
+}
+
+.news {
+  margin-bottom: 0.8rem;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 4px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+}
+
+::placeholder {
+  text-align: right;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+/* Media Queries -------------------- */
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 90%;
+    max-width: 550px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Form Styles ------------------------------ */
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  select {
+    margin-bottom: 0;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .col1 {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  .col2 {
+    flex: 1;
+  }
+
+  #zip {
+    flex: 0.3;
+  }
+}

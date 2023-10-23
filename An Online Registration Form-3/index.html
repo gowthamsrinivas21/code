@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Online Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="heading">THE CODE REVIEW</h1>
+    </header>
+
+    <main>
+      <section class="intro_text">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </section>
+
+      <hr class="border top-border"/>
+
+      <form class="contact" action="#" method="post">
+        <fieldset>
+          <legend><h2><span class="number">1 </span>Contact Information</h2></legend>
+
+          <div class="row">
+            <label class="col col1" for="name">Full Name</label>
+            <input class="col col2" type="text" id="name" name="user_name" placeholder="Required" /> <br>
+          </div>
+
+          <div class="row">
+            <label class="col col1" for="mail">Email Address</label>
+            <input class="col col2" type="email" id="mail" name="user_email" placeholder="Required" /> <br>
+          </div>
+
+          <div class="row">
+            <label class="col col1" for="number">Phone Number</label>
+            <input class="col col2" type="number" id="number" name="user_number" /> <br>
+          </div>
+
+          <div class="row">
+            <label class="col col1" for="address">Street Address</label>
+            <input class="col col2" type="text" id="address" name="user_address" /> <br>
+          </div>
+
+          <div class="row">
+            <label class="col col1" for="city">City</label>
+            <input class="col col2" type="text" id="city" name="user_city" /> <br>
+          </div>
+
+          <div class="row">
+            <label class="col col1" for="state">State</label>
+            <select class="col col2" name="user_state" id="state">
+              <optgroup label="STATES">
+                <option value="andhra_pradesh">Andhra Pradesh</option>
+                <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                <option value="assam">Assam</option>
+                <option value="bihar">Bihar</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="goa">Goa</option>
+                <option value="gujarat">Gujarat</option>
+                <option value="haryana">Haryana</option>
+                <option value="himachal_pradesh">Himachal Pradesh</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="kerala">Kerala</option>
+                <option value="madhya_pradesh">Madhya Pradesh</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="manipur">Manipur</option>
+                <option value="meghalaya">Meghalaya</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="nagaland">Nagaland</option>
+                <option value="odisha">Odisha</option>
+                <option value="punjab">Punjab</option>
+                <option value="rajasthan">Rajasthan</option>
+                <option value="sikkim">Sikkim</option>
+                <option value="tamilnadu">Tamil Nadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="tripura">Tripura</option>
+                <option value="uttarakhand">Uttarakhand</option>
+                <option value="uttar_pradesh">Uttar Pradesh</option>
+                <option value="west_bengal">West Bengal</option>
+              </optgroup>
+              <optgroup label="UNION TERRITORIES">
+                <option value="andaman_and_nicobar_islands">
+                Andaman and Nicobar Islands
+                </option>
+                <option value="handigarh">Chandigarh</option>
+                <option value="dadra_and_nagar_haveli_and_daman_&_diu">
+                Dadra and Nagar Haveli and Daman & Diu
+                </option>
+                <option value="the_government_of_nct_of_delhi">
+                The Government of NCT of Delhi
+                </option>
+                <option value="jammu_&_kashmir">Jammu & Kashmir</option>
+                <option value="ladakh">Ladakh</option>
+                <option value="lakshadweep">Lakshadweep</option>
+                <option value="puducherry">Puducherry</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="row">
+            <label class="col col1" for="zip">Zip</label>
+            <input class="col col2" type="text" id="zip" name="user_zip" />
+          </div>
+        </fieldset>
+      </form>
+
+      <hr class="border bottom-border" />
+
+      <form class="newsletter" action="#" method="post">
+        <fieldset>
+          <legend><h2><span class="number">2 </span>Newsletter</h2></legend>
+
+          <label class="news">Select the newsletters you would like to receive</label>
+          <input type="checkbox" id="html" name="user_interest" value="html"><label for="html">HTML News</label><br>
+          <input type="checkbox" id="css" name="user_interest" value="css"><label for="css">CSS News</label><br>
+          <input type="checkbox" id="javascript" name="user_interest" value="javascript"><label for="javascript">Javascript News</label>
+
+          <label class="news">Newsletter format</label>
+          <input type="radio" id="htmlf" value="html" name="user_format"><label for="htmlf">HTML</label><br>
+          <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain text</label>
+
+          <label for="comments">Other topics you'd like to hear about</label>
+          <textarea name="user_comments" id="comments" rows="5"></textarea>
+        </fieldset>
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
+    </main>
+
+    <footer class="main-footer">
+      <span class="copyright">&copy; Copyright The Code Review</span>
+    </footer>
+  </body>
+</html>
