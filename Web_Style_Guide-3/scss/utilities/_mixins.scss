@@ -1,0 +1,32 @@
+// Mixins for Center
+@mixin center(
+  $display: block,
+  $mar-lef: auto,
+  $mar-rig: auto,
+  $mar-top: null,
+  $max-wid: null
+) {
+  display: $display;
+  margin-left: $mar-lef;
+  margin-right: $mar-rig;
+  margin-top: $mar-top;
+  max-width: $max-wid;
+}
+
+// List of Colors
+@mixin themes($map) {
+  @each $theme, $color in $map {
+    &.#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+// List of Flex Basis
+@mixin basis($map) {
+  @each $col, $value in $map {
+    .#{$col} {
+      flex-basis: $value;
+    }
+  }
+}

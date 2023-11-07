@@ -1,0 +1,52 @@
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: $media-med) {
+
+    .container {
+      @include center($max-wid: $max-width);
+    }
+    
+    .centered {
+      @include center();
+    }
+    
+    .row {
+      flex-direction: row;
+    }
+    
+    [class^=col] {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
+    
+    [class^=col] + [class^=col] {
+      margin-left: 10px;
+    }
+    
+    @include basis($basis);
+    
+    .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      &-link {
+        flex-basis: 100px;
+      }
+    }
+    
+    .btn {
+      padding: 10px 30px;
+      + .btn {
+        margin-left: 10px;
+      }
+    }
+    
+    .logo {
+      margin-left: initial;
+      margin-right: initial;
+    }
+    
+    }

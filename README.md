@@ -16,4 +16,16 @@
 2. CSS
     - Media Queries for Mobile Respnsive Layouts
     - CSS Flexbox 
-    - Basic CSS Transforms and Transitions
+    - CSS Transforms and Transitions
+
+## Project 3 - [Web Style Guide](https://gowthamsrinivas21.github.io/code/An_Online_Registration_Form-3/)
+### Skills Used
+1. HTML
+    - Semantic HTML
+    - HTML Forms
+2. CSS
+    - Media Queries for Mobile Respnsive Layouts
+    - CSS Flexbox 
+    - CSS Selectors
+    - CSS Transforms and Transitions
+3. SASS
