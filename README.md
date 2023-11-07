@@ -18,7 +18,7 @@
     - CSS Flexbox 
     - CSS Transforms and Transitions
 
-## Project 3 - [Web Style Guide](https://gowthamsrinivas21.github.io/code/Web-Style-Guide-4)
+## Project 3 - [Web Style Guide](https://gowthamsrinivas21.github.io/code/Web_Style_Guide-4/)
 ### Skills Used
 1. HTML
     - Semantic HTML
