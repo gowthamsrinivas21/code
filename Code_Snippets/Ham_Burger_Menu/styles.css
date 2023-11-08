@@ -1,0 +1,147 @@
+/* ========================================= */
+/*                BASE STYLES                */
+/* ========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6c737d;
+  font-family: "Inter", sans-serif;
+}
+
+ul li {
+  list-style: none;
+  padding: none;
+  border: none;
+}
+
+/* ========================================= */
+/*                MAIN STYLES                */
+/* ========================================= */
+
+header {
+  background-color: #4b5058;
+  padding: 1rem;
+}
+
+/* Wrapper ham-menu to right side of the screen */
+.ham-menu-wrap,
+.off-screen-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ham-menu Styles */
+.ham-menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.ham-menu span {
+  display: inline-block;
+  width: 70%;
+  height: 4px;
+  background-color: #fbbd60;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s, opacity 0.8s, top 0.6s;
+}
+
+.ham-menu span:first-child {
+  top: 25%;
+}
+
+.ham-menu span:last-child {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:first-child {
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+}
+
+.ham-menu.active span:last-child {
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
+}
+
+/* Mobile navigation styles */
+.off-screen-menu {
+  background-color: #41464d;
+  color: #fff;
+  height: 100vh;
+  width: 75%;
+  position: fixed;
+  top: 0;
+  right: -75%;
+  transition: right 0.4s;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+.off-screen-menu li {
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+/* Hiding large screen menu on mobile */
+.DSK-Menu {
+  display: none;
+}
+
+/* ========================================= */
+/*               MEDIA QUERIES               */
+/* ========================================= */
+
+/* ==== MEDIUM SCREENS ==== */
+
+@media screen and (min-width: 768px) {
+  /* Hiding Mobile menu on large screens */
+  .ham-menu,
+  .off-screen-menu {
+    display: none;
+  }
+
+  /* Displaying large screen menu */
+  .DSK-Menu {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .DSK-Menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+/* ==== LARGE SCREENS ==== */
+
+@media screen and (min-width: 1024px) {
+  .DSK-Menu ul {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
