@@ -72,7 +72,7 @@ header {
   border: 1px solid grey;
   font-size: 0.95rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 }
 
 ::placeholder {
@@ -80,7 +80,7 @@ header {
 }
 
 .gallery {
-  padding: 2rem 0;
+  padding: 0 0 2rem;
 }
 
 /*  =============================================
