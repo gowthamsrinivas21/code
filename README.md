@@ -30,4 +30,10 @@
     - CSS Transforms and Transitions
 3. SASS
 
+## Project 4 - [An Interactive Photo Gallery](https://gowthamsrinivas21.github.io/code/An_interactive_photo_gallery-5/)
+### Skills Used
+1. HTML
+2. CSS
+3. JAVASCRIPT
+
 [codeSnippets](https://gowthamsrinivas21.github.io/code/Code_Snippets/Ham_Burger_Menu/index.html)
