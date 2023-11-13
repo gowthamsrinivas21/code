@@ -1,0 +1,94 @@
+/*  =============================================
+                    BASE STYLES
+    =============================================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.25em;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.2rem;
+}
+
+/*  =============================================
+                    LAYOUT STYLES
+    =============================================
+*/
+header {
+  padding: 2rem 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minulax(200px, 1fr);
+  gap: 20px;
+}
+
+/*  =============================================
+                    ELEMENT STYLES
+    =============================================
+*/
+.title {
+  background-color: #265666;
+  background-image: linear-gradient(45deg, #265666, #e4f96a);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#search {
+  outline: 0;
+  border: 1px solid grey;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+::placeholder {
+  padding: 0.5rem;
+}
+
+.gallery {
+  padding: 2rem 0;
+}
+
+/*  =============================================
+    The below code is removing line-height from a 
+    link, which is giving extra bottom space.
+    =============================================
+*/
+.gallery a {
+  display: block;
+  line-height: 0;
+}
