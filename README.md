@@ -36,4 +36,10 @@
 2. CSS
 3. JAVASCRIPT
 
+## Project 5 - [Game Show App](https://gowthamsrinivas21.github.io/code/game_show_app-6/)
+### Skills Used
+1. HTML
+2. CSS
+3. JAVASCRIPT
+
 [codeSnippets](https://gowthamsrinivas21.github.io/code/Code_Snippets/Ham_Burger_Menu/index.html)
