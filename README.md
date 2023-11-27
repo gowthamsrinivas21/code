@@ -42,4 +42,7 @@
 2. CSS
 3. JAVASCRIPT
 
-[codeSnippets](https://gowthamsrinivas21.github.io/code/Code_Snippets/Ham_Burger_Menu/index.html)
+## codeSnippets
+### [Ham Burger Menu](https://gowthamsrinivas21.github.io/code/Code_Snippets/Ham_Burger_Menu/)
+### [DOM Tasks List](https://gowthamsrinivas21.github.io/code/Code_Snippets/DOM_Tasks_List/)
+### [DOM Invite List](https://gowthamsrinivas21.github.io/code/Code_Snippets/DOM_Invite_List/)
