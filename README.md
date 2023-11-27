@@ -43,6 +43,6 @@
 3. JAVASCRIPT
 
 ## codeSnippets
-### [Ham Burger Menu](https://gowthamsrinivas21.github.io/code/Code_Snippets/Ham_Burger_Menu/)
-### [DOM Tasks List](https://gowthamsrinivas21.github.io/code/Code_Snippets/DOM_Tasks_List/)
-### [DOM Invite List](https://gowthamsrinivas21.github.io/code/Code_Snippets/DOM_Invite_List/)
+1. [Ham Burger Menu](https://gowthamsrinivas21.github.io/code/Code_Snippets/Ham_Burger_Menu/)
+2. [DOM Tasks List](https://gowthamsrinivas21.github.io/code/Code_Snippets/DOM_Tasks_List/)
+3. [DOM Invite List](https://gowthamsrinivas21.github.io/code/Code_Snippets/DOM_Invite_List/)
